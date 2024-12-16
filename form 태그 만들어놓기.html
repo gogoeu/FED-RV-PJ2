@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <ol>
+
+
+        <li>
+            <label>Radio Type</label>
+            Frau<input type="radio" name="gender" value="f" checked>
+            <!-- chcked 미리 체크해두기 -->
+            Herr<input type="radio" name="gender" value="m">
+            <!-- 값을 가져가는게 아니고 체크하는 거니까 value 값을 직접 넣어줌 -->
+            Divers<input type="radio" name="gender" value="d">
+            <!-- 여러 가지 잡다한 -->
+        </li>
+        <li>
+            <label for="name">이름</label>
+            <input type="text" name="name" id="name" required>
+            <!-- name 꼮 써야 함. 입력한 값을 지니고 있음 -->
+
+            <!-- for과 id를 통해 연결고리가 생김, 이 고리로 인해 
+                Text Type 글자 클릭해도 박스 안에 깜빡이는거 -->
+            <!-- placeholder 미리 연하게 이름 써있는거 -->
+            <!-- required 아무것도 안쓰고 엔터 눌렀을 때 입력란에 작성하라고 주의 뜨는거 -->
+        </li>
+        <li>
+            <label for="name">성</label>
+            <input type="text" name="name" id="name" required>
+            <!-- for과 id를 통해 연결고리가 생김, 이 고리로 인해 
+                Text Type 글자 클릭해도 박스 안에 깜빡이는거 -->
+            <!-- required 아무것도 안쓰고 엔터 눌렀을 때 입력란에 작성하라고 주의 뜨는거 -->
+        </li>
+        <li>
+            <label>email Type</label>
+            <input type="email" name="email" required>
+        </li>
+        <li>
+            <label>Tel Type</label>
+            <input type="tel" name="tel" maxlength="11">
+        </li>
+        <li>
+            <label>소식</label>
+            <textarea cols="50" rows="10">약관동의 및 개인정보동의</textarea>
+            <!-- cols,row 사이즈 크기. 근데 다 css로 조정 -->
+            <!-- 
+            인풋들은 한줄쓰기
+            textarea는 여러줄 쓰기
+
+            한줄 댓글은 인풋 텍스트 파일까지 가능해
+            근데 인사, 상세내용 입력, 게시판에 사진 등록, 글자쓰고 그럴 때 textarea -->
+        </li>
+        <li>
+            <input type="submit" value="save">
+        </li>
+        <li>
+            <label>Select Type</label>
+            <select name="map">
+                <option selected>서울</option>
+                <option>대전</option>
+            </select>
+        </li>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        <li>
+            <label>Password Type</label>
+            <input type="password" name="pw">
+        </li>
+
+        <li>
+            <label>email Type</label>
+            <input type="email" name="email" required>
+        </li>
+
+
+
+
+
+        <li>
+            <label>Date Type</label>
+            <input type="date" name="date">
+        </li>
+        <li>
+            <label>Datetime Type</label>
+            <input type="datetime-local" name="date">
+        </li>
+        <li>
+            <label>Time Type</label>
+            <input type="time" name="date">
+        </li>
+        <li>
+            <label>MonTh Type</label>
+            <input type="month" name="date">
+        </li>
+
+
+
+        <li>
+            <label>Tel Type</label>
+            <input type="tel" name="tel" maxlength="11">
+        </li>
+        <li>
+            <label>Serch Type</label>
+            <input type="serch" name="serch" >
+            <!-- aria-label="search" -->
+            <!-- 사파리, 크롬
+            크롬이 사용자 70% 넘었대 -->
+        </li>
+        <li>
+            <label>Color Type</label>
+            <input type="color" name="color">
+        </li>
+        <li>
+            <label>Number Type</label>
+            <input type="number" name="num">
+        </li>
+
+
+        <li>
+            <label>Radio Type</label>
+            영화<input type="checkbox" name="movie" value="mo" checked>
+            독서<input type="checkbox" name="read" value="r">
+            등산<input type="checkbox" name="mountain" value="mt">
+            <!-- value값 같아도 상관 없다고? -->
+        </li>
+        <li>
+            <label>File Type</label>
+            <input type="file" name="photo">
+        </li>
+
+
+
+        <li>
+            <label>Select Type</label>
+            <select name="map">
+                <optgroup label="--지역--">
+                    <option selected>서울</option>
+                    <option>대전</option>
+                </optgroup>
+
+                <optgroup label="축제">
+                    <option>벚꽃놀이</option>
+                    <option>놀이동산</option>
+                </optgroup>
+            </select>
+        </li>
+        <!-- 선택된 애가 value 값이 됨 -->
+
+
+
+        <li>
+            <label>Textarea</label>
+            <textarea cols="50" rows="10">약관동의 및 개인정보동의</textarea>
+            <!-- cols,row 사이즈 크기. 근데 다 css로 조정 -->
+            <!-- 
+            인풋들은 한줄쓰기
+            textarea는 여러줄 쓰기
+
+            한줄 댓글은 인풋 텍스트 파일까지 가능해
+            근데 인사, 상세내용 입력, 게시판에 사진 등록, 글자쓰고 그럴 때 textarea -->
+
+        </li>
+
+
+
+        <!-- email~Number은 html5부터 들어온 애들 -->
+
+
+        <li>
+            <input type="submit" value="save">
+        </li>
+
+
+    </ol>
+    <!-- ol은 숫자가 나옴 -->
+
+
+
+
+    <style>
+        li {
+            padding: 15px 0;
+            border-bottom: 1px solid #ddd;
+        }
+
+        label {
+            display: inline-block;
+            width: 200px;
+        }
+    </style>
+
+
+</body>
+</html>

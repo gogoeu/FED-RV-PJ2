@@ -1,0 +1,17 @@
+@charset "utf-8";
+/* 웹폰트, 공통클래스 CSS - core.css */
+@font-face {
+    font-family: "teko";
+    src: url("../fonts/teko-v20-latin-600.woff2") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Graduate";
+    src: url("../fonts/graduate-v17-latin-regular.woff2") format("truetype");
+  }
+
+  @font-face {
+    font-family: "Yesteryear";
+    src: url("../fonts/yesteryear-v18-latin-regular.woff2")
+      format("truetype");
+  }

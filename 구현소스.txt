@@ -1,0 +1,47 @@
+// 1. 대상선정 :
+// (1) 이벤트 대상 : window
+// (2) 변경대상 : .scroll-act
+const scrollAct = myFn.qs(".meat");
+
+myFn.addEvt(window, "scroll", showEl);
+
+// 기준값 만들기 : 화면 높이값을 사용(화면의 2/3)
+const CRITERIA = (window.innerHeight / 3) * 2;
+
+
+// 3. 함수만들기 /////////////
+// (1) 요소 등장 함수 /////////
+function showEl() {
+  
+    // scrollAct.forEach((el) => {
+      // 각 등장요소의 바운딩 top값
+      // let bcrVal = myFn.getBCR(e);
+  
+      // 화면의 2/3위치에서 클래스 넣기(등장)
+      if (scrollAct < CRITERIA) scrollAct.classList.add("on");
+      else scrollAct.classList.remove("on");
+    // }); ///// forEach /////
+  } /////// showEl함수 ////////////////
+
+
+
+
+
+
+
+
+
+
+    /********************************************************************************************scroll복붙  */
+  /* transform: translateY(20%); */
+
+
+
+  scale:0;
+  opacity: 0;
+  transition: 1.2s ease-in-out;
+}
+.meat.on {
+  scale:1;
+  opacity: 1;
+}
